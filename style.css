@@ -1,0 +1,195 @@
+#body {
+  background-color: rgb(244, 232, 183);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(29, 50px);
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+}
+
+.container > div {
+  background-color: rgb(72, 154, 72);
+  font-size: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+}
+
+#header {
+  background-color: rgba(23, 127, 217, 0);
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+#header > div {
+  border-radius: 15px;
+  background-color: rgb(4, 148, 114);
+  text-align: center;
+  line-height: 45px;
+}
+
+#nav {
+  background-color: rgba(0, 0, 255, 0);
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+#home {
+  background-color: rgba(42, 111, 31, 0);
+  border-radius: 10px;
+  grid-column: 1/2;
+}
+
+#button-home {
+  width: 250px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: rgb(42, 111, 31);
+  color: #ffffff;
+  border: 0px;
+}
+
+#button-home:active {
+  background-color: rgb(83, 181, 68);
+}
+
+#search {
+  background-color: rgba(0, 255, 255, 0);
+  border-radius: 10px;
+  grid-column: 2/4;
+}
+
+#input-search {
+  margin-top: 3px;
+  width: 490px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 20px;
+  border: 2px solid green;
+  background-color: rgb(42, 111, 31);
+  color: rgb(255, 255, 255);
+  background-image: url("img/search.png");
+  background-size: 30px;
+  background-position: 450px 4px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  outline: none;
+}
+
+#input-search::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+#shop {
+  background-color: rgba(42, 111, 31, 0);
+  border-radius: 10px;
+}
+
+#button-shop {
+  width: 250px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: rgb(42, 111, 31);
+  color: #ffffff;
+  background-image: url(/zota-web-training/img/shopping-cart.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  border: 0px;
+}
+
+#button-shop:active {
+  background-color: rgb(83, 181, 68);
+}
+
+#account {
+  background-color: rgba(42, 111, 31, 0);
+  border-radius: 10px;
+}
+
+#button-account {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: rgb(42, 111, 31);
+  color: #ffffff;
+  background-image: url(/zota-web-training/img/user.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  border: 0px;
+}
+
+#button-account:active {
+  background-color: rgb(83, 181, 68);
+}
+
+#aside {
+  text-align: center;
+  line-height: 470px;
+  background-color: rgb(51, 107, 210);
+
+  grid-column: 1/1;
+  grid-row: 3/11;
+}
+
+#content {
+  text-align: center;
+  line-height: 200px;
+  background-color: rgb(227, 160, 44);
+  grid-column: 2/4;
+  grid-row: 3/7;
+}
+
+#section {
+  text-align: center;
+  line-height: 200px;
+  background-color: rgb(219, 119, 48);
+  grid-column: 2/4;
+  grid-row: 7/11;
+}
+
+#all1 {
+  background-color: rgb(155, 81, 165);
+  text-align: center;
+  line-height: 350px;
+  grid-column: 1/4;
+  grid-row: 11/17;
+}
+
+#all2 {
+  background-color: rgb(155, 81, 165);
+  text-align: center;
+  line-height: 350px;
+  grid-column: 1/4;
+  grid-row: 17/23;
+}
+
+#all3 {
+  background-color: rgb(155, 81, 165);
+  text-align: center;
+  line-height: 350px;
+  grid-column: 1/4;
+  grid-row: 23/29;
+}
+
+#footer {
+  background-color: rgb(55, 177, 39);
+  grid-column: 1/4;
+}
