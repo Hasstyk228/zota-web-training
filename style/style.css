@@ -2,8 +2,8 @@
   background-color: rgb(244, 232, 183);
 }
 
-.shadow{
-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+.shadow {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
 }
 .container {
   display: grid;
@@ -22,6 +22,8 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
   font-family: Arial;
 }
+
+/*Header----------------↓↓↓----------------------↓↓↓----------------------↓↓↓----------*/
 
 #header {
   grid-column: 1/4;
@@ -56,7 +58,6 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
 }
 
 #info1 > div {
-  
   height: 33px;
   text-align: left;
   padding-left: 60px;
@@ -71,7 +72,7 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   border-radius: 15px;
 }
 
-#telsup:hover{
+#telsup:hover {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
@@ -80,12 +81,11 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 20px 3px;
-  border-radius:15px ;
+  border-radius: 15px;
 }
 
-#gmsup:hover{
+#gmsup:hover {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
-
 }
 
 #info2 {
@@ -94,11 +94,6 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
 
 #info3 {
   grid-column: 10/11;
-}
-
-#shop {
-  background-color: rgba(31, 111, 40, 0);
-  border-radius: 10px;
 }
 
 #button-shop {
@@ -123,7 +118,7 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   transform: translateY(2px);
 }
 
-#button-shop:hover{
+#button-shop:hover {
   cursor: pointer;
 }
 
@@ -165,13 +160,17 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   transform: translateY(2px);
 }
 
-#button-account:hover{
+#button-account:hover {
   cursor: pointer;
 }
 
 #header > div {
   border-radius: 15px;
 }
+
+/*Header---------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Navigation-----------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
 
 #nav {
   background-color: rgba(0, 0, 255, 0);
@@ -216,7 +215,7 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   background-color: rgb(107, 199, 92);
 }
 
-#button-home:hover{
+#button-home:hover {
   cursor: pointer;
 }
 
@@ -244,10 +243,18 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   outline: none;
 }
 
+#input-search:backround-hover {
+  cursor: pointer;
+}
+
 #input-search::placeholder {
   color: #ffffff;
   opacity: 0.9;
 }
+
+/*Navigation---------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Aside--------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
 
 #aside {
   background-color: rgba(51, 107, 210, 0);
@@ -265,8 +272,15 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
 }
 
 #aside > div:hover {
+  cursor: pointer;
   background-color: rgb(33, 106, 184);
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+#aside > div:active {
+  transition: 0.3s;
+  border-bottom-width: 2px;
+  transform: translateY(2px);
 }
 
 #one-inf {
@@ -329,13 +343,30 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   text-align: start;
 }
 
+/*Aside--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Content------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
 #content {
   text-align: center;
   line-height: 200px;
   background-color: rgb(227, 160, 44);
   grid-column: 2/4;
   grid-row: 3/7;
+  background-image: url(/zota-web-training/img/content_1.jpg);
+  background-size: 900px;
+  background-position: -40px -230px;
+  background-repeat: no-repeat;
+  transition: 0.7s;
 }
+
+#content:hover {
+  background-position: -40px -550px;
+}
+
+/*Content--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Section--------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
 
 #section {
   text-align: center;
@@ -343,7 +374,20 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   background-color: rgb(219, 119, 48);
   grid-column: 2/4;
   grid-row: 7/11;
+  background-image: url(/zota-web-training/img/content_2.jpg);
+  background-size: 1000px;
+  background-position: -90px -200px;
+  background-repeat: no-repeat;
+  transition: 0.7s;
 }
+
+#section:hover {
+  background-position: -90px -550px;
+}
+
+/*Section--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*AllInfo_1-------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
 
 #all1 {
   background-color: rgb(155, 81, 165);
@@ -353,6 +397,10 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   grid-row: 11/17;
 }
 
+/*AllInfo_1-------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*AllInfo_2-------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
 #all2 {
   background-color: rgb(155, 81, 165);
   text-align: center;
@@ -360,6 +408,10 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   grid-column: 1/4;
   grid-row: 17/23;
 }
+
+/*AllInfo_2-------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*AllInfo_3-------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
 
 #all3 {
   background-color: rgb(155, 81, 165);
@@ -369,7 +421,293 @@ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
   grid-row: 23/29;
 }
 
+/*AllInfo_3------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Footer---------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
 #footer {
   background-color: rgb(55, 177, 39);
   grid-column: 1/4;
+}
+
+/*Footer--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Page_1--------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
+#imag_shop_1 {
+  background-color: #14a74500;
+  grid-column: 1/4;
+  grid-row: 3/10;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(9, 67px);
+  gap: 10px;
+}
+
+#imag_shop_1 > div {
+  background-color: #14a74500;
+  border-radius: 15px;
+}
+
+#im_s1 {
+  grid-column: 1/3;
+  grid-row: 1/9;
+  background-image: url(/zota-web-training/img/shop_1.jpg);
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: -50px 0px;
+  transition: 0.3s;
+}
+
+#im_s1:hover {
+  background-image: url(/zota-web-training/img/shop_1.jpg);
+  background-size: 750px;
+  background-position: -95px -30px;
+}
+
+#tl_s1 {
+  font-family: Arial;
+  grid-column: 3/6;
+  grid-row: 1/2;
+  background-image: linear-gradient(90deg, rgb(58, 95, 170), rgb(20, 23, 57));
+  text-align: center;
+  line-height: 65px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#tl_s1 > b {
+  color: rgb(53, 239, 29);
+  text-shadow: 1px 1px 15px rgb(56, 181, 25);
+}
+
+#te_s1 {
+  grid-column: 3/6;
+  grid-row: 2/9;
+  background-image: url(/zota-web-training/img/back_text_1.png);
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  background-position: -100px -20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#te_s1 > div {
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 760px;
+  height: 510px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.381);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1.9px);
+  color: rgb(238, 252, 255);
+  transition: 0.5s;
+}
+
+#te_te_s1 {
+  padding-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24em;
+}
+
+#te_s1 > div:hover {
+  backdrop-filter: blur(40px);
+}
+
+#text_shop_1 {
+  background-color: #14a745;
+}
+
+#other_info1 {
+  background-color: #14a745;
+}
+
+#other_info2 {
+  background-color: #14a745;
+}
+
+/*Page_1--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Page_2--------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
+#im_s2 {
+  grid-column: 1/3;
+  grid-row: 1/9;
+  background-image: url(/zota-web-training/img/shop_2.jpg);
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: -50px 0px;
+  transition: 0.3s;
+}
+
+#im_s2:hover {
+  background-image: url(/zota-web-training/img/shop_2.jpg);
+  background-size: 750px;
+  background-position: -95px -30px;
+}
+
+#tl_s2 {
+  font-family: Arial;
+  grid-column: 3/6;
+  grid-row: 1/2;
+  background-image: linear-gradient(90deg, rgb(170, 99, 58), rgb(20, 37, 57));
+  text-align: center;
+  line-height: 65px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#tl_s2 > b {
+  color: rgb(53, 239, 29);
+  text-shadow: 1px 1px 15px rgb(56, 181, 25);
+}
+
+#te_s2 {
+  grid-column: 3/6;
+  grid-row: 2/9;
+  background-image: url(/zota-web-training/img/back_text_2.png);
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  background-position: -100px -20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#te_s2 > div {
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 760px;
+  height: 510px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.381);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1.9px);
+  color: rgb(238, 252, 255);
+  transition: 0.5s;
+}
+
+#te_te_s2 {
+  padding-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24em;
+}
+
+#te_s2 > div:hover {
+  backdrop-filter: blur(40px);
+}
+
+/*Page_2--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Page_3--------------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
+#im_s3 {
+  grid-column: 1/3;
+  grid-row: 1/9;
+  background-image: url(/zota-web-training/img/shop_3.jpg);
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: -50px 0px;
+  transition: 0.3s;
+}
+
+#im_s3:hover {
+  background-image: url(/zota-web-training/img/shop_3.jpg);
+  background-size: 750px;
+  background-position: -95px -30px;
+}
+
+#tl_s3 {
+  font-family: Arial;
+  grid-column: 3/6;
+  grid-row: 1/2;
+  background-image: linear-gradient(90deg, rgb(90, 170, 58), rgb(20, 37, 57));
+  text-align: center;
+  line-height: 65px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#tl_s3 > b {
+  color: rgb(53, 239, 29);
+  text-shadow: 1px 1px 15px rgb(56, 181, 25);
+}
+
+#te_s3 {
+  grid-column: 3/6;
+  grid-row: 2/9;
+  background-image: url(/zota-web-training/img/back_text_3.jpg);
+  background-size: 920px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#te_s3 > div {
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 760px;
+  height: 510px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.381);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1.9px);
+  color: rgb(238, 252, 255);
+  transition: 0.5s;
+}
+
+#te_te_s3 {
+  padding-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24em;
+}
+
+#te_s3 > div:hover {
+  backdrop-filter: blur(40px);
+}
+
+/*Page_3--------------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Shop_list-----------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
+#list_shop {
+  background-color: #ffffff;
+  grid-column: 1/4;
+  grid-row: 3/14;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#list_shop_title {
+  grid-column: 1/4;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #14a745;
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center; 
+   line-height: 70px;
+}
+
+/*Shop_list-----------------↑↑↑------------------------↑↑↑------------------↑↑↑-------------*/
+
+/*Page_Account--------------↓↓↓------------------------↓↓↓------------------↓↓↓-------------*/
+
+#page_account {
+  grid-column: 2/3;
+  grid-row: 3/7;
+  background-color: #1bd659;
 }
